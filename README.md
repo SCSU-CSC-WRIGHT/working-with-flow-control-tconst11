@@ -15,11 +15,6 @@ Create a number-guessing game where the computer picks a random number between 1
 
 **Concepts Used:**  
 - `input()`, `while` loop, `if-else` statement, `import random`, flow control
-number = int(input("Enter a Number to start the countdown: "))
-
-while number >= 1:
-  print(number)
-  number -= 1
 
 ---
 
@@ -35,6 +30,11 @@ Write a countdown timer that counts down from a number the user inputs to 1. The
 
 **Concepts Used:**  
 - `input()`, `while` loop, `print()`
+number = int(input("Enter a Number to start the countdown: "))
+
+while number >= 1:
+  print(number)
+  number -= 1
 
 ---
 
