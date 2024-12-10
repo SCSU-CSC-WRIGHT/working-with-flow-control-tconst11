@@ -50,6 +50,14 @@ Write a program that asks the user for a number and calculates the sum of all nu
 
 **Concepts Used:**  
 - `input()`, `for` loop, summing
+number = int(input("Enter a number: "))
+
+total_sum = 0
+
+for i in range(1, number + 1):
+  total_sum += i
+
+print(f"the sume of all numbers from 1 to {number} is: {total_sum}")
 
 ---
 
