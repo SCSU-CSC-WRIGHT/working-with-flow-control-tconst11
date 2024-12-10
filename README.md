@@ -15,6 +15,25 @@ Create a number-guessing game where the computer picks a random number between 1
 
 **Concepts Used:**  
 - `input()`, `while` loop, `if-else` statement, `import random`, flow control
+import random
+
+secret_number = random.randint(1, 10)
+
+attempts = 3
+
+for attempt in range(attempts):
+    guess = int(input(f"Attempt {attempt + 1}/{attempts}: Guess the number (between 1 and 10): "))
+    
+    if guess == secret_number:
+        print("Congratulations! You've guessed the correct number.")
+        break
+    elif guess < secret_number:
+        print("Your guess is too low.")
+    else:
+        print("Your guess is too high.")
+
+    if attempt == attempts - 1:
+        print(f"Sorry, you've used all your attempts. The correct number was {secret_number}.")
 
 ---
 
